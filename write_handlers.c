@@ -200,11 +200,7 @@ int write_unsgnd(int is_negative, int ind,
  * @buffer: Arrays of chars
  * @ind: Index at which the number starts in the buffer
  * @length: Length of number
-<<<<<<< HEAD
  * @width: Width specifier
-=======
- * @width: Wwidth specifier
->>>>>>> 93c58ab9f5976de1000c1404343c7b59ce417f8e
  * @flags: Flags specifier
  * @padd: Char representing the padding
  * @extra_c: Char representing extra char
@@ -254,3 +250,4 @@ int write_pointer(char buffer[], int ind, int length,
 		buffer[--ind] = extra_c;
 	return (write(1, &buffer[ind], BUFF_SIZE - ind - 1));
 }
+
